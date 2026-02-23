@@ -7,6 +7,13 @@ from supabase import Client
 CREATOR_ID = int(os.getenv("CREATOR_ID", 0))
 CREATOR_CUS = os.getenv("CREATOR_CUS", None)
 
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
+
+def guardar_mensaje(user_id, content):
+    data = {"user_id": user_id, "content": content}
+    supabase.table("mensajes").insert(data).execute()
 def generar_cus(length=26):
     """Genera un CUS aleatorio de 26 caracteres"""
     chars = string.ascii_uppercase + string.digits
