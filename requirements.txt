@@ -1,7 +1,2 @@
 pyTelegramBotAPI
 supabase
-flask
-flask-cors
-firebase-admin
-python-dotenv
-gunicorn
