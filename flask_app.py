@@ -1,4 +1,3 @@
-
 import os
 import threading
 from flask import Flask
@@ -12,7 +11,40 @@ SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 
 bot = telebot.TeleBot(TOKEN)
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
+# 1. Asegúrate de leer la variable al inicio
+CREATOR_ID = int(os.getenv("CREATOR_ID", 0))
 
+def registrar_usuario(message):
+    t_id = message.from_user.id
+    
+    # Verificar si ya existe en el historial
+    res = supabase.table("id_history").select("cus").eq("telegram_id", t_id).execute()
+    
+    if not res.data:
+        nuevo_cus = generar_cus() # La función de 26 caracteres
+        
+        # DETERMINAR SI ES ADMIN:
+        # Si el ID coincide con el que pusiste en Render, es admin
+        es_jefe = (t_id == CREATOR_ID)
+        
+        # 1. Crear en tabla 'users' con sus estadísticas en 0
+        supabase.table("users").insert({
+            "cus": nuevo_cus,
+            "es_admin": es_jefe, # <--- AQUÍ se asigna el poder
+            "puntos_total": 0,
+            "idioma": "es"
+        }).execute()
+        
+        # 2. Vincular el Telegram ID al CUS
+        supabase.table("id_history").insert({
+            "telegram_id": t_id,
+            "cus": nuevo_cus
+        }).execute()
+        
+        prefijo = "👑 ADMIN RECONOCIDO" if es_jefe else "👤 USUARIO REGISTRADO"
+        return f"{prefijo}\nTu CUS: `{nuevo_cus}`"
+    
+    return "Ya estás en la base de datos."
 # --- TRUCO PARA RENDER: Servidor Flask ---
 app = Flask(__name__)
 
