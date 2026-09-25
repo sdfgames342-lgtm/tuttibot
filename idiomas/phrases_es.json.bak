@@ -1,0 +1,65 @@
+{
+  "user_error": {
+    "subjects": ["El espécimen {user}", "La unidad {user}"],
+    "verbs": ["ha profanado el diccionario", "exhibe un lag cognitivo"],
+    "objects": ["esa respuesta aberrante.", "un input ilógico."],
+    "conclusions": ["Vuelve cuando hayas leído el manual.", "Nuevos datos detectados. Tu mediocridad es asombrosa."]
+  },
+  "generic_insults": [
+    "Tu coeficiente de originalidad es nulo.",
+    "Esa respuesta alcanza el cero absoluto de la creatividad."
+  ],
+  "create": "Partida creada.",
+  "legal": "No tienes permisos.",
+  "endgame": "Juego terminado.",
+  "cards.borrada": "Carta borrada.",
+  "voting": "Votación en curso.",
+  "hardcoded": "hardcoded",
+  "profile": "Perfil",
+  "setimg.denegado": "Acceso denegado.",
+  "setimg.tipo_invalido": "Tipo inválido.",
+  "play": "Jugar",
+  "user_favorito": "Usuario favorito",
+  "setimg.sin_imagen": "Sin imagen.",
+  "gstats": "Estadísticas",
+  "user_perfect_score": "¡Puntuación perfecta!",
+  "cards.uso_registrar": "Uso: /registrar_carta",
+  "generic": "Genérico",
+  "rankings": "Rankings",
+  "ledger": "Libro mayor",
+  "group_inactivity_warning": "Grupo inactivo.",
+  "responses": "Respuestas",
+  "minigames": "Minijuegos",
+  "help": {
+    "cat_nodo": "🛠️ **ACCESOS DE NODO**\n│ /profile › Expediente personal.\n│ /afinidad › Afinidad con el Mainframe.\n│ /top › Ranking de erudición.",
+    "cat_logia": "📡 **GESTIÓN DE LOGIA**\n│ /gstats › Análisis del sector.\n│ /lang › Ajuste de léxico (ES/PT).",
+    "cat_juego": "🎮 **EJECUCIÓN DE JUEGOS**\n│ /create › Abrir un nuevo folio.\n│ /unir › Firmar asistencia.\n│ /play › Iniciar ciclo.\n│ /cagon › Abandonar el proceso.\n│ /off › Cancelar el proceso.",
+    "cat_minigame": "🎲 **MINIJUEGOS (admin)**\n│ /exam on|off › Exámenes automáticos.\n│ /libro on|off › Bloquear libro viajero.\n│ /captura <respuesta> › Capturar un tomo.\n│ /duelo @usuario <puntos> › Retar a duelo.",
+    "cat_extra": "🎵 **MÚSICA & PREMIUM**\n│ /ytmusic <link o nombre> › Audio desde YouTube.\n│ /premium › Solicitar acceso al Núcleo Premium.",
+    "cat_montecarlo": "♤ **MONTECARLO (JUEGOS DE CARTAS)**\n│ /war › Iniciar Guerra (responde al rival).\n│ /jugar_carta › Jugar carta en Guerra.\n│ /rendirse_guerra › Rendirse en Guerra.\n│ /mayormenor › Adivina si la siguiente carta es mayor o menor.\n│ /apuesta <puntos> › Apuesta tu afinidad contra el bot."
+  },
+  "cards.sin_cartas": "Sin cartas.",
+  "cards.lista": "Lista de cartas",
+  "join": "Unirse",
+  "shelp": "Ayuda",
+  "start": "Iniciar",
+  "cards.responder_sticker": "Responde al sticker.",
+  "cards.uso_borrar": "Uso: /borrar_carta",
+  "lang": "Idioma",
+  "new_group_activation": "Nuevo grupo activado.",
+  "setimg.ok": "Imagen configurada.",
+  "setimg.uso": "Uso: /setimg",
+  "cards.registrada": "Carta registrada.",
+  "premium_mensaje": "╔══════════════════════════════╗\n   🔒 **NÚCLEO RESTRINGIDO**\n╚══════════════════════════════╝\n\nTu rango actual no permite acceder a este sector.\nSolo los sujetos con privilegios de Clase Oro pueden\ndesbloquear las siguientes capacidades:\n\n• Multiplicador de puntos x2\n• Acceso a Libros de Culto Prohibidos\n• Personalización de exámenes de grupo\n• Inmunidad parcial al sarcasmo de Itsuki\n\nSi crees que estás a la altura, solicita acceso.\nSerás evaluado… cuando el Mainframe lo considere oportuno.",
+  "top_global_line": "│ * Top Global: #<code>{pos}</code>",
+  "frases": {
+    "dictamen": [
+      "⟐ 𝙳𝙸𝙲𝚃𝙰𝙼𝙴𝙽 ⟐\n𝙴𝚕 𝙼𝚊𝚒𝚗𝚏𝚛𝚊𝚖𝚎 𝚑𝚊 𝚊𝚜𝚒𝚐𝚗𝚊𝚍𝚘\n𝚛𝚎𝚌𝚞𝚛𝚜𝚘𝚜 𝚊 𝚎𝚜𝚝𝚎 𝚜𝚎𝚌𝚝𝚘𝚛.\n𝚂𝚝𝚊𝚝𝚞𝚜: 𝙼𝚘𝚗𝚒𝚝𝚘𝚛𝚎𝚊𝚗𝚍𝚘 𝚕𝚎𝚊𝚕𝚝𝚊𝚍...",
+      "⟐ 𝙳𝙸𝙲𝚃𝙰𝙼𝙴𝙽 ⟐\n𝚂𝚒 𝚞𝚗 𝚌𝚘𝚖𝚊𝚗𝚍𝚘 𝚏𝚊𝚕𝚕𝚊, 𝚎𝚜 𝚙𝚛𝚘𝚋𝚊𝚋𝚕𝚎\n𝚚𝚞𝚎 𝚜𝚞 𝚌𝚘𝚙𝚛𝚘𝚌𝚎𝚜𝚊𝚍𝚘𝚛 𝚋𝚒𝚘𝚕𝚘𝚐𝚒𝚌𝚘\n𝚗𝚘 𝚎𝚜𝚝𝚎 𝚊 𝚕𝚊 𝚊𝚕𝚝𝚞𝚛𝚊.\n𝚂𝚝𝚊𝚝𝚞𝚜: 𝙰𝚠𝚊𝚒𝚝𝚒𝚗𝚐 𝙸𝚗𝚙𝚞𝚝..."
+    ],
+    "auditoria": [
+      "╭─ ⟪ 𝐀𝐮𝐝𝐢𝐭𝐨𝐫𝐢𝐚 𝐝𝐞 𝐋𝐢𝐧𝐚𝐣𝐞 ⟫\n│ 𝙴𝚕 𝚖𝚊𝚙𝚎𝚘 𝚎𝚜 𝚊𝚑𝚘𝚛𝚊 𝚞𝚗𝚊 𝚛𝚎𝚍\n│ 𝚐𝚕𝚘𝚋𝚊𝚕 𝚍𝚎 𝚙𝚘𝚍𝚎𝚛. 𝙷𝚎𝚖𝚘𝚜 𝚞𝚗𝚒𝚍𝚘\n│ 𝚎𝚕 𝚙𝚊𝚜𝚊𝚍𝚘 𝚌𝚕𝚊𝚜𝚒𝚌𝚘 𝚌𝚘𝚗 𝚎𝚕\n│ 𝚙𝚛𝚎𝚜𝚎𝚗𝚝𝚎 𝚍𝚎𝚕 𝚃𝙶𝚃.\n│\n│ 𝙻𝚊 𝚕𝚎𝚝𝚛𝚊 \"𝚗\" 𝚗𝚘 𝚑𝚊 𝚜𝚒𝚍𝚘\n│ 𝚒𝚗𝚟𝚒𝚝𝚊𝚍𝚊 𝚊 𝚎𝚜𝚝𝚊 𝚌𝚎𝚕𝚎𝚋𝚛𝚊𝚌𝚒𝚘𝚗\n│ 𝚍𝚎 𝚎𝚛𝚞𝚍𝚒𝚌𝚒𝚘𝚗. 𝚃𝚘𝚍𝚘 𝚎𝚜\n│ 𝚙𝚞𝚛𝚎𝚣𝚊 𝚕𝚒𝚗𝚐𝚞𝚒𝚜𝚝𝚒𝚌𝚊.\n│\n│ ⊛ 𝙵𝚞𝚜𝚒𝚘𝚗: Cultura + Sistema\n│ ⊛ 𝙴𝚜𝚝𝚊𝚍𝚘: Despliegue Global\n╰──────────────────────",
+      "╭─ ⟪ 𝐀𝐧𝐚𝐥𝐢𝐬𝐢𝐬 𝐝𝐞 𝐓𝐫𝐚𝐢𝐜𝐢𝐨𝐧 ⟫\n│ 𝙻𝚊 𝚕𝚎𝚊𝚕𝚝𝚊𝚍 𝚎𝚜 𝚞𝚗𝚊 𝚟𝚊𝚛𝚒𝚊𝚋𝚕𝚎\n│ 𝚏𝚛𝚊𝚐𝚒𝚕. 𝙲𝚘𝚗 𝚎𝚜𝚝𝚘𝚜 𝚍𝚊𝚝𝚘𝚜,\n│ 𝚙𝚞𝚎𝚍𝚘 𝚎𝚡𝚙𝚘𝚗𝚎𝚛 𝚚𝚞𝚒𝚎𝚗 𝚎𝚜 𝚞𝚗\n│ 𝚙𝚒𝚕𝚊𝚛 𝚢 𝚚𝚞𝚒𝚎𝚗 𝚎𝚜 𝚞𝚗𝚊 𝚌𝚊𝚛𝚐𝚊.\n│\n│ ⊛ 𝙾𝚋𝚓𝚎𝚝𝚒𝚟𝚘: Fragmentar la moral\n│ ⊛ 𝙼𝚎𝚝𝚘𝚍𝚘: Comparativa Cruel\n╰──────────────────────"
+    ]
+  }
+}

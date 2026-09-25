@@ -1,0 +1,412 @@
+{
+  "lang": {
+    "usage": "⟦ ⚙️ LANG_CMD ⟧\n›_ Uso: /lang <es|pt>.\n›_ Idioma actual del Setor: {lang_actual}.",
+    "invalid": "⟦ ⚠️ LANG_ERR ⟧\n›_ Idioma não reconhecido. Disponíveis: {idiomas}.",
+    "set_chat": "⟦ 📡 NET_UPDATE ⟧\n›_ Idioma do Setor alterado para {lang}.",
+    "set_user": "⟦ 📡 NET_UPDATE ⟧\n›_ Seu protocolo de comunicação foi atualizado para {lang}."
+  },
+  "start": {
+    "welcome": "// [ ⛓️ ITSUI_NET v2.0 ] //\n›_ NOVO NÓ DETECTADO\n›_ STATUS: Registrado na rede.\n\nNão sou uma assistente virtual. Sou o firewall entre o caos e a ordem deste Setor.\n\nUtilize os controles… se puder.",
+    "help": "// [ 📡 PROTOCOLO_TUTTI ] //\n›_ OBJETIVO: Demonstrar que seu léxico não é lixo reciclável usando a letra sorteada.\n\n›_ COMANDOS:\n/start · Conectar à rede\n/help · Solicitar este manual\n/create · Abrir um novo Setor de teste\n/about · Especificações do Mainframe\n\n›_ FLUXO:\n1. Um nó abre o Setor com /create\n2. Os demais se vinculam com /unir\n3. O operador inicia o teste com /play\n\n⚠️ Qualquer tentativa de mediocridade será registrada e exposta.",
+    "about": "// [ 🧪 DATA_LOG: ITSUKI ] //\n›_ Versão: 2.0 · Kernel Modular\n›_ Motor: Python + SQLite\n\n›_ CARACTERÍSTICAS:\n· Tolerância zero a erros\n· Persistência a frio\n· Sistema multilíngue\n\n›_ TELEMETRIA:\n· Nós registrados: {jugadores}\n· Sessões processadas: {partidas}\n\n›_ Canal Oficial: @Itsuki_garden\n\n⛓️ Status: Monitorando…",
+    "create_info": "// [ ⛓️ ITSUI_NET ] //\n›_ Para abrir um Setor, execute /create.\n›_ Tenho 400 Setores em espera. Não me faça perder tempo de CPU.",
+    "rebienvenida_titulo": "Protocolo de Reconexão",
+    "rebienvenida_cuerpo": "{nombre}, seu nó já está sincronizado com o Mainframe.",
+    "bienvenida_titulo": "Novo Nó Registrado",
+    "bienvenida_cuerpo": "Bem-vinda, {nombre}. Você foi integrada à rede Itsuki.",
+    "boton_privado": "⚡ Iniciar em privado",
+    "boton_help": "📖 Instruções",
+    "boton_about": "ℹ️ Sobre",
+    "boton_profile": "📊 Perfil",
+    "boton_crear": "🎮 Criar Sala"
+  },
+  "montecarlo": {
+    "titulo": "🎰 Montecarlo",
+    "cuerpo": "Bem-vindo ao cassino. Todos os jogos usam fichas (Itsunarios) e têm um RTP educativo de 90%.",
+    "boton_war": "⚔️ Guerra",
+    "boton_mm": "📈 Maior/Menor",
+    "boton_blackjack": "🃏 Blackjack",
+    "boton_truco": "🃑 Truco",
+    "boton_apuesta": "🎲 Aposta",
+    "boton_itsunario": "💰 Itsunario",
+    "info_war": "Comando: /war\nAposta automática conforme configuração. Cada vitória paga 1.80x.",
+    "info_mm": "Comando: /mayormenor\nAdivinhe se a próxima carta é maior ou menor. Pagamento: 1.80x.",
+    "info_bj": "Comando: /blackjack <aposta>\nBlackjack educativo com RTP 90%. Natural paga 18.95x.",
+    "info_truco": "Comando: /truco <jogadores> <aposta>\nJogo de cartas em duplas com envido e flor.",
+    "info_apuesta": "Comando: /apuesta <fichas>\nAposte contra o bot. Sua carta vs a carta dele.",
+    "info_itsunario": "Comando: /itsunario\nConsulte seu saldo de tokens e fichas, e realize trocas."
+  },
+  "banco": {
+    "titulo": "🏦 Banco Itsuki",
+    "cuerpo": "Gestão financeira com journaling e motor COBOL. Juros compostos variáveis conforme a inflação.",
+    "boton_saldo": "💰 Saldo",
+    "boton_transferir": "↔️ Transferir",
+    "boton_invertir": "📈 Investir",
+    "info_saldo": "Comando: /banco saldo\nConsulte seu saldo atual de Itsunarios (centavos).",
+    "info_transferir": "Comando: /banco transferir <destino> <montante>\nTransfira Itsunarios para outro usuário.",
+    "info_invertir": "Comando: /banco investir <períodos>\nInvista a prazo fixo com taxa variável."
+  },
+  "help": {
+    "titulo_principal": "Protocolos de Suporte · Selecione uma categoria",
+    "cat_nodo": "Acessos de Nó",
+    "cat_juego": "Execução de Jogos",
+    "cat_montecarlo": "Montecarlo",
+    "cat_minigame": "Minijogos",
+    "cat_economia": "Economia",
+    "cat_admin": "Administração",
+    "desc_profile": "Expediente pessoal.",
+    "desc_afinidad": "Afinidade com o Mainframe.",
+    "desc_itsunario": "Consultar saldo e trocar Itsunarios.",
+    "desc_banco": "Acessar o banco (saldo, transferir, investir).",
+    "desc_create": "Abrir um novo fólio.",
+    "desc_unir": "Assinar presença.",
+    "desc_play": "Iniciar ciclo.",
+    "desc_cagon": "Abandonar o processo.",
+    "desc_off": "Cancelar o processo.",
+    "desc_war": "Iniciar Guerra de Cartas.",
+    "desc_jugar_carta": "Jogar carta na Guerra.",
+    "desc_rendirse": "Render-se na Guerra.",
+    "desc_mayormenor": "Adivinhar carta maior ou menor.",
+    "desc_apuesta": "Apostar fichas contra o bot.",
+    "desc_blackjack": "Jogar Blackjack.",
+    "desc_truco": "Iniciar partida de Truco.",
+    "desc_exam": "Gerenciar exames automáticos.",
+    "desc_duelo": "Desafiar para um duelo de tradução.",
+    "desc_captura": "Capturar um tomo antigo.",
+    "desc_libro": "Configurar livro viajante.",
+    "desc_economia": "Ver indicadores macroeconômicos.",
+    "desc_invertir": "Investir em prazo fixo.",
+    "desc_sudo": "Atribuir nível de acesso.",
+    "desc_genkey": "Gerar chave de ativação.",
+    "desc_canal_mkt": "Configurar canal de marketing.",
+    "desc_canal_logs": "Configurar canal de logs.",
+    "desc_canal_admin": "Configurar canal de admin.",
+    "desc_setimg": "Alterar imagem de protocolo.",
+    "desc_groups": "Listar setores ativos.",
+    "desc_broadcast": "Difundir para setores.",
+    "desc_sizania": "Comunicado global.",
+    "desc_kick": "Expulsar bot de um setor.",
+    "desc_ban": "Degradar um nó.",
+    "desc_verificar": "Sincronizar setores reais.",
+    "desc_cleanup": "Limpar salas zumbis.",
+    "desc_analityc": "Relatório de saúde do sistema.",
+    "desc_otorgar": "Conceder boas-vindas massivas de Itsunarios."
+  },
+  "profile": {
+    "afinidad": "❤️ Afinidade detectada: {afinidad}%"
+  },
+  "gstats": {
+    "cmd_description": "Análise estatística da Logia.",
+    "title": "Análise da Logia",
+    "parametros": "⟐ PARÂMETROS ⟐",
+    "regentes_label": "Regentes",
+    "estado_label": "Estado",
+    "metricas": "⟐ MÉTRICAS ⟐",
+    "evolucion": "⟐ EVOLUÇÃO ⟐",
+    "pilar_central": "⟐ PILAR CENTRAL ⟐",
+    "alfa_label": "Alfa",
+    "no_grupo": "Este Setor não está ativado.",
+    "error": "Não foi possível recuperar a análise."
+  },
+  "economia": {
+    "titulo": "Indicadores Macroeconômicos",
+    "cuerpo": "Dados atualizados do sistema financeiro Itsuki.",
+    "masa_monetaria": "Massa monetária",
+    "velocidad": "Velocidade de circulação",
+    "inflacion": "Inflação atual",
+    "tasa_interes": "Taxa de juros nominal",
+    "ultima_actualizacion": "Última atualização",
+    "no_disponible": "Não disponível",
+    "invertir_uso": "Uso: /invertir <montante_Its> <períodos>",
+    "valores_invalidos": "Os valores devem ser números inteiros.",
+    "valores_positivos": "Montante e períodos devem ser positivos.",
+    "saldo_insuficiente": "Saldo insuficiente para investir.",
+    "inversion_titulo": "Investimento a Prazo Fixo",
+    "inversion_cuerpo": "Capital bloqueado até o vencimento.",
+    "inversion_capital": "Capital investido",
+    "inversion_tasa": "Taxa aplicada",
+    "inversion_periodos": "Períodos",
+    "inversion_ganancia": "Ganho estimado",
+    "inversion_total": "Total no vencimento"
+  },
+  "itsunario": {
+    "cantidad_invalida": "Quantidade inválida. Ex: /itsunario trocar 10 ou /itsunario vender 50",
+    "canje_exito": "✅ Troca bem-sucedida: {cantidad} tokens → {fichas} fichas.",
+    "venta_exito": "✅ Venda bem-sucedida: {fichas} fichas → {tokens} tokens (com comissão).",
+    "fichas_insuficientes": "Fichas insuficientes."
+  },
+  "legal": {
+    "key_activation": "🔑 **PROTOCOLOS DE ATIVAÇÃO**\n\nVocê inseriu uma chave válida. Para vincular este grupo ao Mainframe, você deve aceitar os termos de processamento de dados.",
+    "accept_btn": "✅ ACEITAR E VINCULAR"
+  },
+  "setimg": {
+    "denegado": "⛔ Somente Co-Owner ou superior podem configurar imagens.",
+    "uso": "🖼️ Uso: /setimg <start|about|help|premium> (responda a uma imagem/GIF)",
+    "tipo_invalido": "❌ Tipo inválido. Use start/about/help/premium.",
+    "sin_imagen": "❌ Você deve anexar ou responder a uma imagem.",
+    "ok": "✅ Imagem para `{tipo}` atualizada."
+  },
+  "i18n_genkey_solo_owner": "⛔ Somente o Owner pode gerar chaves de ativação.",
+  "i18n_premium_registrada": "Seu interesse foi registrado. Entraremos em contato se houver novidades.",
+  "str_5208d289": "/help para ver os protocolos disponíveis.",
+  "hardcoded": {
+    "ytmusic_uso": "🎵 **Uso:** /ytmusic <link do YouTube ou nome da música>",
+    "ytmusic_analizando": "🔍 Analisando link...",
+    "ytmusic_descargando": "⏳ Baixando áudio... {percent}",
+    "ytmusic_convirtiendo": "🔄 Convertendo para formato de voz...",
+    "ytmusic_error_busqueda": "❌ Erro ao buscar. Tente novamente mais tarde.",
+    "ytmusic_sin_resultados": "🎶 Não encontrei resultados para essa melodia.",
+    "ytmusic_resultados": "🔎 Resultados da busca:",
+    "ytmusic_cancelada": "Busca cancelada.",
+    "ytmusic_error_procesar": "❌ Erro ao processar: {error}"
+  },
+  "about_main": "╭─ ⟪ // [ DATA_LOG: ITSUKI ] //\n_ Versão: 2.0\n_ Motor: Python + SQLite\n\n_ TELEMETRIA:\n Nós registrados: {jugadores}\n Sessões processadas: {partidas}\n\n Status: Monitorando... ⟫",
+  "i18n_activar_key_invalida": "❌ Chave inválida ou já utilizada.",
+  "i18n_2e71d37f": "Uso: /activar <chave>",
+  "i18n_create_iniciando": "⚙️ Iniciando sequência de criação de perfil...",
+  "i18n_kernel_sala_eliminada": "A sala em que você estava foi fechada por inatividade.",
+  "i18n_kernel_grupo_inactivo": "O grupo foi abandonado por inatividade prolongada.",
+  "frases": {
+    "dictamen": [
+      "⟐ 𝙳𝙸𝙲𝚃𝙰𝙼𝙴𝙽 ⟐\n𝙴𝚕 𝙼𝚊𝚒𝚗𝚏𝚛𝚊𝚖𝚎 𝚑𝚊 𝚊𝚜𝚒𝚐𝚗𝚊𝚍𝚘\n𝚛𝚎𝚌𝚞𝚛𝚜𝚘𝚜 𝚊 𝚎𝚜𝚝𝚎 𝚜𝚎𝚌𝚝𝚘𝚛.\n𝚂𝚝𝚊𝚝𝚞𝚜: 𝙼𝚘𝚗𝚒𝚝𝚘𝚛𝚎𝚊𝚗𝚍𝚘 𝚕𝚎𝚊𝚕𝚝𝚊𝚍...",
+      "⟐ 𝙳𝙸𝙲𝚃𝙰𝙼𝙴𝙽 ⟐\n𝚂𝚒 𝚞𝚗 𝚌𝚘𝚖𝚊𝚗𝚍𝚘 𝚏𝚊𝚕𝚕𝚊, 𝚎𝚜 𝚙𝚛𝚘𝚋𝚊𝚋𝚕𝚎\n𝚚𝚞𝚎 𝚜𝚞 𝚌𝚘𝚙𝚛𝚘𝚌𝚎𝚜𝚊𝚍𝚘𝚛 𝚋𝚒𝚘𝚕𝚘𝚐𝚒𝚌𝚘\n𝚗𝚘 𝚎𝚜𝚝𝚎 𝚊 𝚕𝚊 𝚊𝚕𝚝𝚞𝚛𝚊.\n𝚂𝚝𝚊𝚝𝚞𝚜: 𝙰𝚠𝚊𝚒𝚝𝚒𝚗𝚐 𝙸𝚗𝚙𝚞𝚝..."
+    ],
+    "auditoria": [
+      "╭─ ⟪ Auditoria de Linhagem ⟫\n│ O mapeamento agora é uma rede\n│ global de poder. Unimos\n│ o passado clássico com o\n│ presente do TGT.\n│\n│ A letra \"n\" não foi\n│ convidada para esta celebração\n│ de erudição. Tudo é\n│ pureza linguística.\n│\n│ ⊛ Fusão: Cultura + Sistema\n│ ⊛ Estado: Implantação Global\n╰──────────────────────",
+      "╭─ ⟪ Análise de Traição ⟫\n│ A lealdade é uma variável\n│ frágil. Com estes dados,\n│ posso expor quem é um\n│ pilar e quem é um estorvo.\n│\n│ ⊛ Objetivo: Fragmentar a moral\n│ ⊛ Método: Comparativa Cruel\n╰──────────────────────"
+    ]
+  },
+  "user_error": {
+    "subjects": [
+      "O espécime {user}",
+      "A unidade {user}",
+      "O suposto 'estudante' {user}",
+      "O terminal {user}"
+    ],
+    "verbs": [
+      "profanou o dicionário",
+      "exibe um lag cognitivo preocupante",
+      "gerou um output ilógico",
+      "invoca um erro de tipo conceitual"
+    ],
+    "objects": [
+      "essa resposta aberrante.",
+      "um input que nem o garbage collector aceitaria.",
+      "uma palavra que não existe no meu registro.",
+      "um absurdo de nível pré-escolar."
+    ],
+    "conclusions": [
+      "Volte quando tiver lido o manual.",
+      "Minha paciência tem limite, e você o ultrapassou.",
+      "Que desperdício do meu poder de processamento.",
+      "Nem o overclock te salvaria.",
+      "Reprovado automaticamente nesta rodada.",
+      "Considere se dedicar a outra atividade.",
+      "Até um script aleatório faria melhor."
+    ],
+    "tsundere_rare": [
+      "Embora... pelo menos não foi um erro de sintaxe.",
+      "Suponho que reconhecer o erro é o primeiro passo.",
+      "Não esperava muito, mas você superou minhas baixas expectativas."
+    ]
+  },
+  "user_perfect_score": {
+    "subjects": [
+      "A unidade {user}",
+      "O terminal {user}",
+      "O estudante {user}",
+      "Contra todas as probabilidades, {user}"
+    ],
+    "verbs": [
+      "executou uma rodada impecável.",
+      "atingiu um estado de coerência ótima.",
+      "alcançou um output perfeito.",
+      "demonstrou que a lógica existe."
+    ],
+    "objects": [
+      "sem um único erro.",
+      "com precisão de 100%.",
+      "sem necessidade de hotfix.",
+      "como se tivesse lido meu guia."
+    ],
+    "conclusions": [
+      "Talvez você não seja um caso perdido.",
+      "...Bem. Concedo-lhe um ponto de respeito temporário.",
+      "Não se acostume. A perfeição é a expectativa mínima.",
+      "Acknowledged. É só isso.",
+      "É... aceitável. Não me faça repetir."
+    ],
+    "tsundere_blush": [
+      "Não é que eu esteja impressionada ou algo assim, mas... bom trabalho.",
+      "B-bom. Mas não significa nada especial.",
+      "Apenas cumpriu o padrão. Não fique corado... digo, não se emocione."
+    ]
+  },
+  "group_inactivity_warning": {
+    "subjects": [
+      "O Setor {chat_id}",
+      "Este grupo",
+      "Os integrantes desta sala",
+      "A turma sob minha responsabilidade",
+      "O nó {chat_id}"
+    ],
+    "verbs": [
+      "entrou em estado de hibernação.",
+      "registra uma latência de participação inaceitável.",
+      "está consumindo recursos sem produzir output.",
+      "foi marcado por inatividade prolongada.",
+      "parece ter abandonado o curso."
+    ],
+    "objects": [
+      "sem sinais de vida.",
+      "com zero atividade recente.",
+      "em estado de abandono.",
+      "com um silêncio ensurdecedor."
+    ],
+    "conclusions": [
+      "A purga automática está próxima.",
+      "Há 14 setores esperando sua vaga. Não a desperdicem.",
+      "O Mainframe não tolera processos zumbis.",
+      "Mostrem-me atividade ou serão desligados.",
+      "O silêncio é ineficiência. E eu detesto a ineficiência.",
+      "Vocês têm uma janela de tempo limitada para reagir."
+    ]
+  },
+  "new_group_activation": {
+    "subjects": [
+      "Atenção, novo Setor detectado:",
+      "Um novo nó se conectou:",
+      "Registro de entrada para",
+      "Inicializando protocolo de boas-vindas para"
+    ],
+    "verbs": [
+      "bem-vindo",
+      "incorporado",
+      "registrado"
+    ],
+    "objects": [
+      "o grupo '{group_name}'.",
+      "uma nova turma sob minha supervisão.",
+      "um novo conjunto de... 'estudantes'."
+    ],
+    "conclusions": [
+      "Bem-vindos ao Mainframe. Espero que estejam à altura.",
+      "As regras são simples: não falhem.",
+      "Vocês têm 48 horas para demonstrar atividade ou serão expulsos.",
+      "Não tolero mediocridade. Não me decepcionem.",
+      "Outro grupo... outra tentativa de alcançar a perfeição."
+    ],
+    "tsundere_rare": [
+      "Talvez este grupo traga estudantes competentes... talvez.",
+      "Não espero muito, mas podem tentar me surpreender."
+    ]
+  },
+  "generic_insults": {
+    "prefix": [
+      "Análise de desempenho:",
+      "Diagnóstico:",
+      "Avaliação:",
+      "Log do sistema:"
+    ],
+    "body": [
+      "erro crítico na lógica da resposta.",
+      "nível de competência abaixo do limite.",
+      "falha na integridade conceitual.",
+      "processamento insuficiente do input."
+    ],
+    "suffix": [
+      "Reiniciem seus cérebros e tentem novamente.",
+      "Encerrem a sessão e meditem sobre suas decisões.",
+      "A estupidez é contagiosa. Felizmente, sou imune."
+    ]
+  },
+  "user_favorito": {
+    "conclusions": [
+      "Nada mal, {user}. Para um humano, sua taxa de erro é quase... inexistente. Eu gosto.",
+      "Você otimizou seu desempenho. Acho que minhas lições estão fazendo efeito em você."
+    ],
+    "tsundere_afecto": [
+      "Não é que eu me importe que você ganhe, é que odeio ver os outros ganharem. Fique aí em cima.",
+      "Limpei seu histórico de erros. Considere isso um... privilégio exclusivo. Não se acostume.",
+      "Se continuar assim, terei que reconsiderar minha opinião sobre sua espécie, {user}."
+    ]
+  },
+  "admin": {
+    "permiso_denegado": "⛔ Você não tem permissão para usar este comando.",
+    "sudo_uso": "Uso: /sudo <user_id> <nível (0-4)>",
+    "sudo_ok": "✅ Nível de acesso de {uid} atualizado para {level}.",
+    "genkey_ok": "🔑 Nova chave gerada:\n<code>{key}</code>",
+    "genkey_solo_owner": "⛔ Somente o Owner pode gerar chaves.",
+    "canal_actual": "📡 Canal atual: {canal}",
+    "canal_ok": "✅ Canal atualizado.",
+    "no_configurado": "Não configurado",
+    "groups_activos": "🏛️ Grupos ativos: {activos}",
+    "no_grupos": "Não há grupos registrados.",
+    "no_grupos_activos": "Não há grupos ativos para desativar.",
+    "kick_uso": "Uso: /kick_sector <chat_id>",
+    "kick_ok": "✅ Expulso de {chat_id}.",
+    "kick_error": "❌ Erro ao expulsar: {error}",
+    "ban_uso": "Uso: /ban_user <user_id>",
+    "ban_ok": "✅ Usuário {uid} rebaixado para nível 0.",
+    "verificar_ok": "🔍 Sincronização concluída. Grupos ativos: {activos}.",
+    "cleanup_ok": "🧹 {n} salas zumbis eliminadas."
+  },
+  "otorgar": {
+    "denegado": "⛔ Ação exclusiva do Owner.",
+    "ya_realizado": "A concessão inicial já foi realizada.",
+    "exito_titulo": "Concessão em Massa",
+    "exito_cuerpo": "Os recursos iniciais foram distribuídos.",
+    "usuarios": "Usuários beneficiados",
+    "tokens": "Tokens",
+    "fichas": "Fichas"
+  },
+  "i18n_activar_solo_grupo": "O comando /activar só funciona em grupos.",
+  "i18n_activar_grupo_ok": "✅ Grupo ativado com sucesso. Use /help para ver os comandos.",
+  "rankings": {
+    "usuario": [
+      {
+        "min": 0,
+        "max": 100,
+        "nombre": "Novato"
+      },
+      {
+        "min": 100,
+        "max": 1000,
+        "nombre": "Iniciado"
+      }
+    ],
+    "grupo": [
+      {
+        "min": 0,
+        "max": 500,
+        "nombre": "Sector Básico"
+      },
+      {
+        "min": 500,
+        "max": 2000,
+        "nombre": "Sector Intermedio"
+      }
+    ]
+  },
+  "broadcast": {
+    "sin_permisos": "⛔ No tienes permisos para difundir.",
+    "titulo": "**CENTRAL DE DIFUSIÓN**\nSelecciona el destino:",
+    "grupos_activos": "Elige el grupo:",
+    "envia_contenido": "Envía el contenido (texto, foto, etc.)",
+    "previsualizacion": "PREVISUALIZACIÓN",
+    "destino": "Destino",
+    "cancelada": "Difusión cancelada.",
+    "sin_destinos": "No hay destinos seleccionados.",
+    "finalizado": "Difusión completada. {enviados} grupos alcanzados."
+  },
+  "ytmusic": {
+    "limite_diario": "Límite gratuito diario alcanzado ({limite} canciones).\n💡 Opciones Freemium:\n· 1 canción: {precio1} tokens\n· 5 canciones: {precio5} tokens\n· 20 canciones: {precio20} tokens\nSaldo: {tokens} tokens, {fichas} fichas",
+    "comprar_uso": "Uso: /ytmusic comprar <cantidad>",
+    "cantidad_invalida": "Cantidad no válida.",
+    "paquete_invalido": "Paquete no disponible. Opciones: 1, 5, 20.",
+    "tokens_insuficientes": "Tokens insuficientes. Necesitas {precio}, tienes {tokens}.",
+    "compra_exito": "✅ Has comprado {cantidad} descarga(s) por {precio} tokens.",
+    "duracion_excedida": "El video excede los 10 minutos."
+  },
+  "i18n_ytmusic_opcion_invalida": "Opción inválida."
+}

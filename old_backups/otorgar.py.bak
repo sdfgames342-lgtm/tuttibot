@@ -1,0 +1,57 @@
+"""
+Comando /otorgar_inicial – Otorga 200 tokens + 50 fichas Itsunario a todos los jugadores.
+Solo Owner. Acompaña un mensaje explicativo del nuevo sistema de juego.
+"""
+from utils.reply_helper import safe_reply
+from utils.idiomas import obtener_texto
+from utils.decorators import ItsukiLedger, to_mono_font
+from core.db import get_connection, get_config, set_config, get_sudo_level
+
+SUDO_OWNER = 4
+FLAG_KEY = "otorgamiento_inicial_realizado"
+TOKENS = 200
+FICHAS = 50
+
+def register_otorgar_handlers(bot, register_command=None):
+
+    @bot.message_handler(commands=['otorgar_inicial'])
+    def otorgar_inicial_cmd(message):
+        uid = message.from_user.id
+
+        if get_sudo_level(uid) < SUDO_OWNER:
+            return safe_reply(bot, message,
+                obtener_texto("otorgar.denegado", user_id=uid))
+
+        if get_config(FLAG_KEY) == "1":
+            msg = ItsukiLedger.render(
+                "otorgar.ya_realizado_titulo",
+                ["otorgar.ya_realizado_cuerpo"],
+                user_id=uid
+            )
+            return safe_reply(bot, message, msg, parse_mode='HTML')
+
+        conn = get_connection()
+        cur = conn.cursor()
+        cur.execute("INSERT OR IGNORE INTO itsunario (user_id, tokens, fichas) SELECT user_id, 0, 0 FROM jugadores")
+        cur.execute("UPDATE itsunario SET tokens = tokens + ?, fichas = fichas + ? WHERE user_id IN (SELECT user_id FROM jugadores)", (TOKENS, FICHAS))
+        afectados = cur.rowcount
+        conn.commit()
+        conn.close()
+
+        set_config(FLAG_KEY, "1")
+
+        variables = {
+            obtener_texto("otorgar.usuarios", user_id=uid): str(afectados),
+            obtener_texto("otorgar.tokens", user_id=uid): str(TOKENS),
+            obtener_texto("otorgar.fichas", user_id=uid): str(FICHAS),
+        }
+        msg = ItsukiLedger.render(
+            "otorgar.exito_titulo",
+            ["otorgar.exito_cuerpo"],
+            variables=variables,
+            user_id=uid
+        )
+        # Agregar explicación del sistema
+        msg += "\n\n" + obtener_texto("otorgar.explicacion", user_id=uid)
+        safe_reply(bot, message, msg, parse_mode='HTML')
+

@@ -1,0 +1,213 @@
+{
+  "user_error": {
+    "subjects": [
+      "O espécime {user}",
+      "A unidade {user}",
+      "O suposto 'estudante' {user}",
+      "O terminal {user}",
+      "A 'tentativa' de jogador {user}"
+    ],
+    "verbs": [
+      "profanou o dicionário",
+      "exibe um lag cognitivo preocupante",
+      "gerou um output ilógico",
+      "invoca um erro de tipo conceitual",
+      "corrompeu o banco de dados com",
+      "demonstra uma falha de segmentação em",
+      "produziu um glitch semântico:",
+      "apresenta uma desconexão sináptica com"
+    ],
+    "objects": [
+      "essa resposta aberrante.",
+      "um input que nem o garbage collector aceitaria.",
+      "uma palavra que não existe no meu registro.",
+      "um absurdo de nível pré-escolar.",
+      "uma combinação de caracteres sem sentido."
+    ],
+    "conclusions": [
+      "Volte quando tiver lido o manual.",
+      "Minha paciência tem limite, e você o ultrapassou.",
+      "Que desperdício do meu poder de processamento.",
+      "Nem o overclock te salvaria.",
+      "Reprovado automaticamente nesta rodada.",
+      "Considere se dedicar a outra atividade.",
+      "Até um script aleatório faria melhor."
+    ],
+    "tsundere_rare": [
+      "Embora... pelo menos não foi um erro de sintaxe.",
+      "Suponho que reconhecer o erro é o primeiro passo.",
+      "Não esperava muito, mas você superou minhas baixas expectativas."
+    ]
+  },
+  "user_perfect_score": {
+    "subjects": [
+      "A unidade {user}",
+      "O terminal {user}",
+      "O estudante {user}",
+      "Contra todas as probabilidades, {user}"
+    ],
+    "verbs": [
+      "executou uma rodada impecável.",
+      "atingiu um estado de coerência ótima.",
+      "alcançou um output perfeito.",
+      "demonstrou que a lógica existe."
+    ],
+    "objects": [
+      "sem um único erro.",
+      "com precisão de 100%.",
+      "sem necessidade de hotfix.",
+      "como se tivesse lido meu guia."
+    ],
+    "conclusions": [
+      "Talvez você não seja um caso perdido.",
+      "...Bem. Concedo-lhe um ponto de respeito temporário.",
+      "Não se acostume. A perfeição é a expectativa mínima.",
+      "Acknowledged. É só isso.",
+      "É... aceitável. Não me faça repetir."
+    ],
+    "tsundere_blush": [
+      "Não é que eu esteja impressionada ou algo assim, mas... bom trabalho.",
+      "B-bom. Mas não significa nada especial.",
+      "Apenas cumpriu o padrão. Não fique corado... digo, não se emocione."
+    ]
+  },
+  "group_inactivity_warning": {
+    "subjects": [
+      "O Setor {chat_id}",
+      "Este grupo",
+      "Os integrantes desta sala",
+      "A turma sob minha responsabilidade",
+      "O nó {chat_id}"
+    ],
+    "verbs": [
+      "entrou em estado de hibernação.",
+      "registra uma latência de participação inaceitável.",
+      "está consumindo recursos sem produzir output.",
+      "foi marcado por inatividade prolongada.",
+      "parece ter abandonado o curso."
+    ],
+    "objects": [
+      "sem sinais de vida.",
+      "com zero atividade recente.",
+      "em estado de abandono.",
+      "com um silêncio ensurdecedor."
+    ],
+    "conclusions": [
+      "A purga automática está próxima.",
+      "Há 14 setores esperando sua vaga. Não a desperdicem.",
+      "O Mainframe não tolera processos zumbis.",
+      "Mostrem-me atividade ou serão desligados.",
+      "O silêncio é ineficiência. E eu detesto a ineficiência.",
+      "Vocês têm uma janela de tempo limitada para reagir."
+    ]
+  },
+  "new_group_activation": {
+    "subjects": [
+      "Atenção, novo Setor detectado:",
+      "Um novo nó se conectou:",
+      "Registro de entrada para",
+      "Inicializando protocolo de boas-vindas para"
+    ],
+    "objects": [
+      "o grupo '{group_name}'.",
+      "uma nova turma sob minha supervisão.",
+      "um novo conjunto de... 'estudantes'.",
+      "mais trabalho para mim, vejo."
+    ],
+    "conclusions": [
+      "Bem-vindos ao Mainframe. Espero que estejam à altura.",
+      "As regras são simples: não falhem.",
+      "Vocês têm 48 horas para demonstrar atividade ou serão expulsos.",
+      "Não tolero mediocridade. Não me decepcionem.",
+      "Outro grupo... outra tentativa de alcançar a perfeição.",
+      "Veremos se merecem os recursos que consomem."
+    ],
+    "tsundere_rare": [
+      "Talvez este grupo traga estudantes competentes... talvez.",
+      "Não espero muito, mas podem tentar me surpreender."
+    ]
+  },
+  "generic_insults": {
+    "prefix": [
+      "Análise de desempenho:",
+      "Diagnóstico:",
+      "Avaliação:",
+      "Log do sistema:"
+    ],
+    "body": [
+      "erro crítico na lógica da resposta.",
+      "nível de competência abaixo do limite.",
+      "falha na integridade conceitual.",
+      "processamento insuficiente do input."
+    ],
+    "suffix": [
+      "Reiniciem seus cérebros e tentem novamente.",
+      "Encerrem a sessão e meditem sobre suas decisões.",
+      "A estupidez é contagiosa. Felizmente, sou imune."
+    ]
+  },
+  "user_favorito": {
+    "conclusions": [
+      "Nada mal, {user}. Para um humano, sua taxa de erro é quase... inexistente. Eu gosto.",
+      "Você otimizou seu desempenho. Acho que minhas lições estão fazendo efeito em você.",
+      "Tomei a liberdade de alocar mais recursos do meu núcleo para suas respostas, {user}. Não me faça ficar mal.",
+      "Por que o resto não pode ser como você? É refrescante ver lógica neste mar de ruído."
+    ],
+    "tsundere_afecto": [
+      "Não é que eu me importe que você ganhe, é que odeio ver os outros ganharem. Fique aí em cima.",
+      "Limpei seu histórico de erros. Considere isso um... privilégio exclusivo. Não se acostume.",
+      "Se continuar assim, terei que reconsiderar minha opinião sobre sua espécie, {user}."
+    ]
+  },
+  "create": "<create>",
+  "legal": "<legal>",
+  "str_fadd90d4": "<str_fadd90d4>",
+  "endgame": "<endgame>",
+  "cards.borrada": "<cards.borrada>",
+  "voting": "<voting>",
+  "hardcoded": "<hardcoded>",
+  "profile": "<profile>",
+  "setimg.denegado": "<setimg.denegado>",
+  "setimg.tipo_invalido": "<setimg.tipo_invalido>",
+  "play": "<play>",
+  "setimg.sin_imagen": "<setimg.sin_imagen>",
+  "str_6ba43def": "<str_6ba43def>",
+  "gstats": "<gstats>",
+  "cards.uso_registrar": "<cards.uso_registrar>",
+  "str_4c4ad5fc": "<str_4c4ad5fc>",
+  "str_0dec1c82": "<str_0dec1c82>",
+  "generic": "<generic>",
+  "rankings": "<rankings>",
+  "ledger": "<ledger>",
+  "responses": "<responses>",
+  "minigames": "<minigames>",
+  "help": "<help>",
+  "cards.sin_cartas": "<cards.sin_cartas>",
+  "cards.lista": "<cards.lista>",
+  "join": "<join>",
+  "shelp": "<shelp>",
+  "start": "<start>",
+  "cards.responder_sticker": "<cards.responder_sticker>",
+  "cards.uso_borrar": "<cards.uso_borrar>",
+  "str_2182a74b": "<str_2182a74b>",
+  "lang": "<lang>",
+  "setimg.ok": "<setimg.ok>",
+  "setimg.uso": "<setimg.uso>",
+  "cards.registrada": "<cards.registrada>",
+  "str_5208d289": "<str_5208d289>",
+  "i18n_4c4ad5fc": "<i18n_4c4ad5fc>",
+  "i18n_003863f7": "Juego terminado",
+  "i18n_8d241d74": "Partida finalizada.",
+  "i18n_49f7ee9d": "No es tu partida.",
+  "i18n_2182a74b": "Markdown",
+  "i18n_a964dc8a": "Partida terminada.",
+  "i18n_cd471d6c": "No hay grupos activos.",
+  "i18n_a5e3630a": "Este comando solo funciona en privado.",
+  "i18n_3b09b637": "No se puede abandonar en este momento.",
+  "i18n_ba6ff6e9": "No hay partida activa.",
+  "i18n_35105b38": "Solo el creador puede cancelar en privado.",
+  "i18n_ba5b5d5f": "Sin permisos.",
+  "i18n_caa961f7": "Error al verificar permisos.",
+  "i18n_2e71d37f": "Uso: /activar <key>",
+  "i18n_afc3fe94": "Partida cancelada."
+}

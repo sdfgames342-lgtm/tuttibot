@@ -1,0 +1,36 @@
+{
+  "user_error": {
+    "subjects": ["El espécimen {user}", "La unidad {user}"],
+    "verbs": ["ha profanado el diccionario", "exhibe un lag cognitivo"],
+    "objects": ["esa respuesta aberrante.", "un input ilógico."],
+    "conclusions": ["Vuelve cuando hayas leído el manual.", "Nuevos datos detectados. Tu mediocridad es asombrosa."]
+  },
+  "user_perfect_score": {
+    "subjects": ["La unidad {user}", "El terminal {user}"],
+    "verbs": ["ejecutó una ronda impecable.", "alcanzó un estado de coherencia óptima."],
+    "objects": ["sin un solo error.", "con precisión del 100%."],
+    "conclusions": ["Tal vez no seas un caso perdido.", "...Bien. Concedo un punto de respeto temporal."]
+  },
+  "group_inactivity_warning": {
+    "subjects": ["El Sector {chat_id}", "Este grupo"],
+    "verbs": ["entró en estado de hibernación.", "registra una latencia de participación inaceptable."],
+    "objects": ["sin señales de vida.", "con cero actividad reciente."],
+    "conclusions": ["La purga automática está próxima.", "Hay 14 sectores esperando su vaga. No la desperdicien."]
+  },
+  "new_group_activation": {
+    "subjects": ["Atención, nuevo Sector detectado:", "Un nuevo nodo se ha conectado:"],
+    "verbs": ["bienvenido", "incorporado"],
+    "objects": ["el grupo '{group_name}'.", "una nueva turma bajo mi supervisión."],
+    "conclusions": ["Bienvenidos al Mainframe. Espero que estén a la altura.", "Las reglas son simples: no fallen."]
+  },
+  "generic_insults": [
+    "Tu coeficiente de originalidad es nulo.",
+    "Esa respuesta alcanza el cero absoluto de la creatividad."
+  ],
+  "user_favorito": {
+    "conclusions": [
+      "Nada mal, {user}. Para un humano, tu tasa de error es casi... inexistente. Me gustas.",
+      "Optimizaste tu desempeño. Creo que mis lecciones están haciendo efecto en ti."
+    ]
+  }
+}

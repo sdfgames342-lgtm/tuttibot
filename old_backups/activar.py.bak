@@ -1,0 +1,29 @@
+from telebot import types
+from utils.reply_helper import safe_reply
+from core.db import validar_key, registrar_grupo, activar_grupo
+from utils.idiomas import obtener_texto
+import logging
+
+logger = logging.getLogger(__name__)
+pending_activations = {}
+
+def register_activar_handlers(bot, register_command=None):
+    @bot.message_handler(commands=['activar'])
+    def activar_cmd(message):
+        if message.chat.type == 'private':
+            return
+        parts = message.text.split()
+        if len(parts) != 2:
+            return safe_reply(bot, message, obtener_texto("i18n_2e71d37f"))
+        key = parts[1].strip()
+        chat_id = str(message.chat.id)
+        if validar_key(key, marcar_usada=False):
+            nombre = getattr(message.chat, 'title', None)
+            pending_activations[chat_id] = {'nombre': nombre, 'activado': False, 'key': key}
+            markup = types.InlineKeyboardMarkup()
+            markup.add(
+                types.InlineKeyboardButton(obtener_texto("legal.accept_btn"), callback_data=f"legal_accept_{chat_id}")
+            )
+            safe_reply(bot, message, obtener_texto("legal.key_activation"), reply_markup=markup, parse_mode='HTML')
+        else:
+            safe_reply(bot, message, obtener_texto("i18n_activar_key_invalida"))

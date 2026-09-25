@@ -1,0 +1,45 @@
+import sys, os
+sys.path.insert(0, os.path.dirname(__file__))
+import os, logging, threading, queue
+from dotenv import load_dotenv
+from core.db import init_db
+from core.db import init_sizania_db
+from core.bot import ItsukiBot
+from core.loader import load_commands
+from core.kernel import start_kernel_threads
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+load_dotenv()
+init_db()
+init_sizania_db()
+
+TOKEN = os.getenv("TELEGRAM_TOKEN")
+bot = ItsukiBot(TOKEN)
+
+salas = {}
+salas_lock = threading.Lock()
+msg_queue = queue.Queue()
+
+def register_command(name):
+    def decorator(func):
+        return bot.message_handler(commands=[name])(func)
+    return decorator
+
+def register_callback(prefix):
+    def decorator(func):
+        return bot.callback_query_handler(func=lambda call: call.data and call.data.startswith(prefix))(func)
+    return decorator
+
+# Iniciar hilos del sistema
+start_kernel_threads(bot, salas, salas_lock, msg_queue)
+
+# Cargar todos los comandos automáticamente
+load_commands(bot, register_command, register_callback, msg_queue)
+
+if __name__ == "__main__":
+    bot.remove_webhook()
+    print("🚀 Itsuki Mainframe iniciado")
+    bot.infinity_polling()
+

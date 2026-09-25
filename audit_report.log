@@ -1,0 +1,59 @@
+ITSUKI AUDIT REPORT v2.0
+============================================================
+Python files analizados: 61
+
+[Cadenas hardcodeadas reales]
+  commands/montecarlo/truco.py: 10
+  commands/salir.py: 4
+  commands/banca/__init__.py: 4
+  commands/itsunario.py: 1
+
+[hardcoded_strings]
+  commands/itsunario.py:54 -> Uso: /itsunario o /itsunario canjear <tokens>
+  commands/salir.py:72 -> Has salido de Mayor o Menor.
+  commands/salir.py:89 -> Partida de Mayor/Menor cancelada.
+  commands/salir.py:112 -> No estás en ninguna partida activa.
+  commands/salir.py:131 -> No hay partida activa que cancelar.
+  commands/montecarlo/truco.py:133 -> Uso: /truco <jugadores> <apuesta_fichas> Ej: /truco 2 50
+  commands/montecarlo/truco.py:137 -> El truco se juega con 2, 4 o 6 jugadores.
+  commands/montecarlo/truco.py:139 -> La apuesta debe ser un número positivo de fichas.
+  commands/montecarlo/truco.py:142 -> Ya hay una partida de truco en curso en este grupo.
+  commands/montecarlo/truco.py:179 -> No hay partida de truco esperando jugadores.
+  commands/montecarlo/truco.py:181 -> Ya estás en la partida.
+  commands/montecarlo/truco.py:183 -> La partida ya está completa.
+  commands/montecarlo/truco.py:197 -> No hay partida de truco esperando.
+  commands/montecarlo/truco.py:199 -> Solo el creador puede iniciar.
+  commands/montecarlo/truco.py:210 -> No es tu turno o no estás en una partida activa.
+  commands/banca/__init__.py:82 -> El monto debe ser positivo.
+  commands/banca/__init__.py:86 -> Fondos insuficientes.
+  commands/banca/__init__.py:79 -> Formato inválido. Use IDs numéricos y monto en centavos.
+  commands/banca/__init__.py:104 -> Número de periodos inválido.
+
+[missing_formatters]
+  commands/user.py:336 -> Llamada directa a send_message sin safe_reply
+  commands/casino.py:65 -> Llamada directa a send_message sin safe_reply
+  commands/casino.py:67 -> Llamada directa a send_message sin safe_reply
+  commands/casino.py:69 -> Llamada directa a send_message sin safe_reply
+  commands/casino.py:71 -> Llamada directa a send_message sin safe_reply
+  commands/casino.py:73 -> Llamada directa a send_message sin safe_reply
+  commands/casino.py:75 -> Llamada directa a send_message sin safe_reply
+  commands/casino.py:77 -> Llamada directa a send_message sin safe_reply
+  commands/casino.py:79 -> Llamada directa a send_message sin safe_reply
+  commands/casino.py:81 -> Llamada directa a send_message sin safe_reply
+  commands/montecarlo/truco.py:106 -> Llamada directa a send_message sin safe_reply
+  commands/montecarlo/truco.py:220 -> Llamada directa a send_message sin safe_reply
+  commands/montecarlo/truco.py:220 -> Llamada directa a send_message sin safe_reply
+  commands/montecarlo/truco.py:220 -> Llamada directa a send_message sin safe_reply
+  commands/montecarlo/truco.py:58 -> Llamada directa a send_message sin safe_reply
+  commands/montecarlo/truco.py:58 -> Llamada directa a send_message sin safe_reply
+  commands/montecarlo/truco.py:58 -> Llamada directa a send_message sin safe_reply
+  commands/montecarlo/truco.py:247 -> Llamada directa a send_message sin safe_reply
+  commands/montecarlo/truco.py:286 -> Llamada directa a send_message sin safe_reply
+  commands/montecarlo/truco.py:238 -> Llamada directa a send_message sin safe_reply
+  commands/montecarlo/truco.py:283 -> Llamada directa a send_message sin safe_reply
+  commands/montecarlo/truco.py:329 -> Llamada directa a send_message sin safe_reply
+  utils/reply_helper.py:21 -> Llamada directa a send_message sin safe_reply
+
+[html_in_strings]
+  commands/itsunario.py:54 -> Uso: /itsunario o /itsunario canjear <tokens>
+  commands/montecarlo/truco.py:133 -> Uso: /truco <jugadores> <apuesta_fichas> Ej: /truco 2 50
